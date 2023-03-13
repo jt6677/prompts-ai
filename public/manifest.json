@@ -1,8 +1,7 @@
 {
   "short_name": "Prompts",
-  "name": "Prompts.AI",
-  "icons": [
-  ],
+  "name": "promtlab.dev",
+  "icons": [],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

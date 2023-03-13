@@ -1,40 +1,39 @@
+import {
+  Box,
+  Card,
+  CardContent,
+  Grid,
+  Select,
+  Slider,
+  TextField,
+  Tooltip,
+  Typography,
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+import ChipInput from "material-ui-chip-input";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  Typography,
-  Slider,
-  TextField,
-  Grid,
-  Tooltip,
-  Card,
-  CardContent,
-  Select,
-  Box,
-} from "@material-ui/core";
-import ChipInput from "material-ui-chip-input";
-import {
-  selectPrompt,
-  editPrompt,
-  selectTemperature,
-  editTemperature,
-  selectMaxTokens,
-  editMaxTokens,
-  selectStopSymbols,
   addStopSymbol,
   deleteStopSymbol,
-  editTopP,
   editFrequencyPenalty,
-  editPresencePenalty,
-  selectTopP,
-  selectFrequencyPenalty,
-  selectPresencePenalty,
-  selectModelName,
+  editMaxTokens,
   editModelName,
+  editPresencePenalty,
+  editPrompt,
+  editTemperature,
+  editTopP,
+  selectFrequencyPenalty,
+  selectMaxTokens,
+  selectModelName,
+  selectPresencePenalty,
+  selectPrompt,
+  selectStopSymbols,
+  selectTemperature,
+  selectTopP,
 } from "../slices/editorSlice";
-import { makeStyles } from "@material-ui/styles";
 import ModeTabs from "./ModeTabs";
 import WorkspaceForm from "./WorkspaceForm";
-import FeedbackForm from "./FeedbackForm";
 
 const useStyles = makeStyles({
   fullWidth: {
@@ -111,13 +110,11 @@ export function PromptEditor() {
         spacing={3}
       >
         <Grid item xs={12} sm={3} md={3}>
-          <Box mb={1}>
+          {/* <Box mb={1}>
             <Card>
-              <CardContent>
-                <FeedbackForm />
-              </CardContent>
+              <CardContent><FeedbackForm /></CardContent>
             </Card>
-          </Box>
+          </Box> */}
           <Box mb={1}>
             <Card>
               <CardContent>

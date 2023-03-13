@@ -6,15 +6,14 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core";
-import VpnKeyIcon from "@material-ui/icons/VpnKey";
-import UndoIcon from "@material-ui/icons/Undo";
-import RedoIcon from "@material-ui/icons/Redo";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import RedoIcon from "@material-ui/icons/Redo";
+import UndoIcon from "@material-ui/icons/Undo";
+import VpnKeyIcon from "@material-ui/icons/VpnKey";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectApiKey, toggleApiKeyDialog } from "../slices/editorSlice";
 import { ActionCreators } from "redux-undo";
+import { selectApiKey, toggleApiKeyDialog } from "../slices/editorSlice";
 
 const useStyles = makeStyles((theme: Theme) => ({
   buttonGroup: {
@@ -47,7 +46,7 @@ export default function Header() {
         <Toolbar variant="regular" disableGutters={true}>
           <div className={classes.buttonGroup}>
             <Typography variant="h6" color="inherit">
-              Prompts.ai
+              promtlab.dev
             </Typography>
           </div>
           <div className={classes.buttonGroup}>
@@ -61,19 +60,6 @@ export default function Header() {
             </IconButton>
             <IconButton onClick={handleRedoClick}>
               <RedoIcon />
-            </IconButton>
-          </div>
-          <div className={classes.buttonGroup}>
-            <IconButton
-              aria-label="GitHib"
-              onClick={() =>
-                window.open(
-                  "https://github.com/sevazhidkov/prompts-ai",
-                  "_blank"
-                )
-              }
-            >
-              <GitHubIcon fontSize={"small"} />
             </IconButton>
           </div>
         </Toolbar>

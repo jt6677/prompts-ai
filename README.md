@@ -1,6 +1,6 @@
 ## Prompts AI
 
-[Prompts AI](https://prompts.ai/) is an advanced [GPT-3](https://en.wikipedia.org/wiki/GPT-3) playground.
+
 
 It has two main goals:
 1) Help first-time GPT-3 users to discover capabilities, strengths
@@ -62,14 +62,10 @@ The project is in a very early stage and still shaping its form.
 It also has some amount of technical debt (for example, `editorSlice.ts`).
 However, contributions are welcome. 
 
-Until we have a formed contribution process, if you need any help
- to find something to work on and/or make sure your contribution will be merged to the product, 
- reach out to me at seva@zhidkoff.com.
+
 
 ### Contributors
 
 Sorted by the date of a first contribution. Feel free to add yourselves while making
  your first contribution!
 
-- [Seva Zhidkov](https://github.com/sevazhidkov)
-- [Ilya Penyaev](http://github.com/penyaev)

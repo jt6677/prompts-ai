@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-import { PromptEditor } from "./components/PromptEditor";
 import {
   Box,
   Container,
@@ -8,16 +6,18 @@ import {
   ThemeProvider,
   Typography,
 } from "@material-ui/core";
+import React, { useEffect } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { useDispatch } from "react-redux";
+import ApiKeyDialog from "./components/dialogs/ApiKeyDialog";
+import TemplateDialog from "./components/dialogs/TemplateDialog";
+import Header from "./components/Header";
+import { PromptEditor } from "./components/PromptEditor";
 import {
   fetchForCurrentTab,
-  updateTabIndex,
   normalizeConversations,
+  updateTabIndex,
 } from "./slices/editorSlice";
-import Header from "./components/Header";
-import TemplateDialog from "./components/dialogs/TemplateDialog";
-import ApiKeyDialog from "./components/dialogs/ApiKeyDialog";
 
 function App() {
   const dispatch = useDispatch();
@@ -68,9 +68,7 @@ function App() {
                     <ModeTabs/>
                 </Box>*/}
         <Box mt={2}>
-          <Typography>
-            Not affiliated with OpenAI. Feedback: seva@zhidkoff.com.
-          </Typography>
+          <Typography></Typography>
         </Box>
       </Container>
     </ThemeProvider>
